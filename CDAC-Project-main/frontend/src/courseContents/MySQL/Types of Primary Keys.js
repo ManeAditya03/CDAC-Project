@@ -1,0 +1,14 @@
+const MySQLChapterBody = (props) => {
+    return (
+        <div className='courseChapterBody'>
+            <h3>1. Types Of Primary Keys :</h3>
+            <p>A primary key is a column or a set of columns that uniquely identifies each row in the table.  The primary key follows these rules:</p><br />
+            <p>1.A primary key must contain unique values. If the primary key consists of multiple columns, the combination of values in these columns must be unique.</p><br />
+            <p>2.A primary key column cannot have NULL values. Any attempt to insert or update NULL to primary key columns will result in an error. Note that MySQL implicitly adds a NOT NULL constraint to primary key columns.</p><br />
+            <p>3.A table can have one an only one primary key.</p><br />
+            <p></p>
+            <p>Because MySQL works faster with integers, the data type of the primary key column should be the integer e.g., INT, BIGINT. And you should ensure sure that value ranges of the integer type for the primary key are sufficient for storing all possible rows that the table may have.</p>
+        </div>
+    );
+}
+export default MySQLChapterBody;
